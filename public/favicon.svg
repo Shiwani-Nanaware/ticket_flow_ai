@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f0f4f8" rx="40"/>
+  
+  <!-- Outer chip border -->
+  <rect x="50" y="50" width="100" height="100" fill="none" stroke="#1e3a5f" stroke-width="8" rx="8"/>
+  
+  <!-- Inner square -->
+  <rect x="70" y="70" width="60" height="60" fill="none" stroke="#1e3a5f" stroke-width="6" rx="4"/>
+  
+  <!-- Center dot -->
+  <circle cx="100" cy="100" r="8" fill="#1e3a5f"/>
+  
+  <!-- Pins/connectors - top -->
+  <rect x="95" y="35" width="10" height="15" fill="#1e3a5f" rx="2"/>
+  
+  <!-- Pins/connectors - bottom -->
+  <rect x="95" y="150" width="10" height="15" fill="#1e3a5f" rx="2"/>
+  
+  <!-- Pins/connectors - left -->
+  <rect x="35" y="95" width="15" height="10" fill="#1e3a5f" rx="2"/>
+  
+  <!-- Pins/connectors - right -->
+  <rect x="150" y="95" width="15" height="10" fill="#1e3a5f" rx="2"/>
+</svg>

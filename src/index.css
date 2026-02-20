@@ -2,95 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* TicketFlow AI - Enterprise White Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core surfaces */
+    --background: 0 0% 98%;
+    --surface: 0 0% 100%;
+    --foreground: 220 9% 22%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 9% 22%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 9% 22%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Navy blue primary */
+    --primary: 221 67% 33%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 221 67% 96%;
+    --primary-muted: 221 40% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Grays */
+    --secondary: 210 17% 95%;
+    --secondary-foreground: 220 9% 22%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 17% 96%;
+    --muted-foreground: 215 13% 44%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 221 67% 96%;
+    --accent-foreground: 221 67% 33%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status */
+    --success: 142 71% 35%;
+    --success-bg: 142 71% 95%;
+    --warning: 32 95% 44%;
+    --warning-bg: 32 95% 95%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --destructive-bg: 0 72% 96%;
+    --info: 211 79% 42%;
+    --info-bg: 211 79% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders & inputs */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 221 67% 33%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Sidebar */
+    --sidebar-background: 221 67% 21%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 221 67% 21%;
+    --sidebar-accent: 221 67% 28%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 221 67% 28%;
+    --sidebar-ring: 221 67% 55%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Shadows */
+    --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.04);
+    --shadow-elevated: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --background: 221 67% 8%;
+    --surface: 221 67% 11%;
+    --foreground: 0 0% 95%;
+    --card: 221 67% 11%;
+    --card-foreground: 0 0% 95%;
+    --popover: 221 67% 11%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 221 67% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 221 40% 18%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 221 40% 18%;
+    --muted-foreground: 215 13% 65%;
+    --accent: 221 67% 22%;
+    --accent-foreground: 0 0% 95%;
+    --border: 221 40% 20%;
+    --input: 221 40% 20%;
+    --ring: 221 67% 55%;
+    --sidebar-background: 221 67% 8%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 221 67% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 221 67% 14%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 221 40% 14%;
+    --sidebar-ring: 221 67% 55%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
   }
 }
 
@@ -101,5 +107,66 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "cv02","cv03","cv04","cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .card-surface {
+    @apply bg-card border border-border rounded-lg;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-elevated {
+    @apply bg-card border border-border rounded-lg;
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .status-success {
+    background-color: hsl(var(--success-bg));
+    color: hsl(var(--success));
+  }
+
+  .status-warning {
+    background-color: hsl(var(--warning-bg));
+    color: hsl(var(--warning));
+  }
+
+  .status-error {
+    background-color: hsl(var(--destructive-bg));
+    color: hsl(var(--destructive));
+  }
+
+  .status-info {
+    background-color: hsl(var(--info-bg));
+    color: hsl(var(--info));
+  }
+
+  .nav-item-active {
+    background-color: hsl(var(--sidebar-accent));
+  }
+
+  .confidence-bar {
+    height: 6px;
+    border-radius: 999px;
+    background-color: hsl(var(--border));
+  }
+
+  .confidence-fill-high {
+    background-color: hsl(var(--success));
+  }
+
+  .confidence-fill-medium {
+    background-color: hsl(var(--warning));
+  }
+
+  .confidence-fill-low {
+    background-color: hsl(var(--destructive));
   }
 }

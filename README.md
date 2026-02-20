@@ -1,73 +1,86 @@
-# Welcome to your Lovable project
+# TicketFlow AI - Enterprise ITSM Platform
 
-## Project info
+An intelligent ticket resolution system powered by AI, designed to streamline IT Service Management (ITSM) operations with automated ticket resolution, human review workflows, and comprehensive analytics.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**Live Demo**: https://ticket-flow-ai-tau.vercel.app/
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **AI-Powered Ticket Resolution**: Automatically resolves tickets with confidence scoring
+- **Smart Categorization**: Intelligent ticket categorization and routing
+- **Human Review Workflow**: Escalation and manual review for complex tickets
+- **Real-time Analytics**: Dashboard with key metrics and performance insights
+- **SLA Compliance Tracking**: Monitor service level agreements
+- **Explainability Panel**: Understand AI decision-making process
+- **Enterprise-Grade UI**: Professional sidebar navigation and responsive design
 
-**Use Lovable**
+## Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to the project directory
+cd bright-resolution-engine
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Technology Stack
 
-**Use GitHub Codespaces**
+- **Vite** - Next generation frontend tooling
+- **React 18** - UI library
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - High-quality React components
+- **React Router** - Client-side routing
+- **React Hook Form** - Efficient form handling
+- **TanStack Query** - Data fetching and caching
+- **Recharts** - Data visualization
+- **Lucide React** - Icon library
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/        # Reusable UI components
+│   ├── ui/           # shadcn/ui components
+│   ├── AppLayout.tsx # Main layout shell
+│   └── ...
+├── pages/            # Page components
+│   ├── Index.tsx     # Dashboard overview
+│   ├── TicketSubmission.tsx
+│   ├── AutoResolved.tsx
+│   ├── HumanReview.tsx
+│   ├── Analytics.tsx
+│   └── NotFound.tsx
+├── data/             # Mock data
+├── hooks/            # Custom React hooks
+├── lib/              # Utility functions
+└── App.tsx           # Main app component
+```
 
-This project is built with:
+## Pages
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Overview** - Dashboard with key metrics and recent tickets
+- **Submit Ticket** - Create new support tickets
+- **Auto-Resolved** - View automatically resolved tickets
+- **Human Review** - Manage tickets requiring human intervention
+- **Analytics** - Performance metrics and insights
 
-## How can I deploy this project?
+## Development
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+The project uses Vite for fast development and hot module replacement. Make changes to files in the `src/` directory and see them reflected instantly in your browser.
 
-## Can I connect a custom domain to my Lovable project?
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

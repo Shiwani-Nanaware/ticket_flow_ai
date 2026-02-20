@@ -79,8 +79,5 @@ src/
 - **Human Review** - Manage tickets requiring human intervention
 - **Analytics** - Performance metrics and insights
 
-## Development
-
-The project uses Vite for fast development and hot module replacement. Make changes to files in the `src/` directory and see them reflected instantly in your browser.
 
 

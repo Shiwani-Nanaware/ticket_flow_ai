@@ -89,7 +89,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
             <h2 className="text-sm font-semibold text-foreground">
               {NAV_ITEMS.find((n) => n.path === location.pathname)?.label ?? "TicketFlow AI"}
             </h2>
-            <p className="text-xs text-muted-foreground">AI-powered ITSM — Production</p>
+            
           </div>
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-1.5 text-xs text-muted-foreground border border-border rounded-md px-2.5 py-1.5">
